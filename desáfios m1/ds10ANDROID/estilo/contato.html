@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fale Conosco</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        :root {
+    --cor0: #ffffff;
+    --cor1: #C5EBD6;
+    --cor2: #83E1AD;
+    --cor3: #3DDCB4;
+    --cor4: #2FAB66;
+    --cor5: #063D1E;
+    --cor6: #000000;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'amdroid', cursive;
+}
+
+         body {
+             font-family: Arial, Helvetica, sans-serif;
+             background-image: linear-gradient(to top, var(--cor5), var(--cor4), var(--cor3));
+             margin: 77px;
+         }
+         .contato1{
+             display: block;
+             padding: 5px 0px;
+             width: 99%;
+         }
+         div {
+            background-color: white;
+             max-width: 600px;
+             min-width: 320px;
+             margin: auto;
+             padding: 10px;
+             border-radius: 12px;
+         }
+         h2 {
+             font-family: 'Bebas Neue', cursive;
+             font-weight: normal;
+             text-align: center;
+             color: #063D1E;
+         }
+         .contato2 {
+             
+             display: block;
+             padding: 10px 0px;
+             width: 99%;
+         }
+         .contato3 {
+             display: block;
+             padding: 5px 0px;
+             width: 99%;
+         }
+         .botao {
+             width: 99.5%;
+             background-color: var(--cor5);
+             color: var(--cor0);
+             height: 30px;
+         }
+         .botao:hover {
+             background-color: var(--cor4);
+         }
+
+    </style>
+</head>
+<body>
+    <section class="content">
+        <div>
+            <h2>Formulario de contato</h2>
+            <form method="POST" action="e-mail.php">
+                <label class="contato1" for="nome">Nome</label>
+                <input class="contato2" type="text" name="Nome" id="nome" placeholder=" Digite seu nome">
+                <label class="contato1" for="sobrenome">Sobrenome</label>
+                <input class="contato2" type="text" name="Sobrenome" id="sobrenome" placeholder=" Digite seu sobrenome">
+                <label class="contato1" for="e-mail">E-mail</label>
+                <input class="contato2" type="text" name="E-mail" id="e-mail" placeholder=" Digite seu e-mail">
+                <label class="contato1" for="mesagem">Mesagem</label>
+                <textarea class="contato3" name="Mesagem" id="mesagem" placeholder=" Digite uma mesagem" cols="30" rows="10"></textarea>
+                <input class="botao" type="submit" name="enviar" value="Enviar" &raque>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
