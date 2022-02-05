@@ -49,8 +49,11 @@ nav > a {
 }
 nav > a:hover {
     background-color: var(--cor1);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
     color: var(--cor5);
     text-decoration: underline;
+    transition: 0.5s;  
 }
 body {
     font-family: var(--fonte-padrao);
